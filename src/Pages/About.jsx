@@ -1,7 +1,10 @@
 
-import { CardMedia,Container, Typography, Grid, Card, CardContent } from "@mui/material"
-const About = () =>
-   {
+import { CardMedia, Container, Typography, Grid, Card, CardContent } from "@mui/material"
+import s1 from "../assets/s1.webp"
+import s2 from "../assets/s2.jpg"
+import s3 from "../assets/s3.webp"
+
+const About = () => {
   return (
     <Container sx={{ mt: 4 }}>
       <Typography variant="h2" gutterBottom>
@@ -14,7 +17,7 @@ const About = () =>
       <Grid container spacing={6}>
         <Grid item xs={12} md={4}>
           <Card>
-             <CardMedia component="img" height="400" image="src\assets\s2.jpg" />
+            <CardMedia component="img" height="400" image={s1} alt="Our Mission" />
             <CardContent>
               <Typography variant="h5">Our Mission</Typography>
               <Typography>
@@ -25,7 +28,7 @@ const About = () =>
         </Grid>
         <Grid item xs={12} md={4}>
           <Card>
-             <CardMedia component="img" height="300" image="src\assets\s8.jpg" />
+            <CardMedia component="img" height="300" image={s2} alt="Contact Us" />
             <CardContent>
               <Typography variant="h5">Contact Us</Typography>
               <Typography>Email: support@covidinfo.org</Typography>
@@ -35,8 +38,8 @@ const About = () =>
         </Grid>
         <Grid item xs={12} md={4}>
           <Card>
+            <CardMedia component="img" height="300" image={s3} alt="Careers & Resources" />
             <CardContent>
-               <CardMedia component="img" height="140" image="src\assets\s1.webp" />
               <Typography variant="h5">Careers & Resources</Typography>
               <Typography>
                 Careers, FAQs, Publications, Procurement & Library resources.
